@@ -12,6 +12,6 @@ public class Config { // Configuration
     @Bean
     Set<String> id() {
         return new HashSet<>();
-    }  // qwe
+    }
 
 }
