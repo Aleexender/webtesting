@@ -12,4 +12,5 @@ import lombok.Setter;
 public class CompanyModel {
     String id;
     int netProfit;
+    //일단 보류
 }
