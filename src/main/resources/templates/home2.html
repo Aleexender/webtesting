@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <link rel="stylesheet" href="/css/beauty.css?ver=1" type="text/css">
+        <script src="/js/home2.js" type="text/javascript"></script>
+
+    <!--    <style>-->
+<!--   -->
+<!--    </style>-->
+</head>
+<body>
+<ul class="list-group" th:each="userModel : ${list}">
+    <li>
+        <p class="companyLinkedName" th:text="${userModel.company}"></p>
+
+
+        <span class="badge" th:text="${userModel.count}"></span>
+    </li>
+</ul>
+
+<form action="/user/click" method="post">
+    <div class="form-group">
+        <label for="name">회사이름</label>
+        <input type="text" id="name" name="id" placeholder="">
+    </div>
+    <button type="submit">등록</button>
+</form>
+
+
+<!--삼성</a>-->
+
+
+</body>
+</html>

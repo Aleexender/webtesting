@@ -1,5 +1,4 @@
-package com.example.websitetest;
-
+package com.example.websitetest.company;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,9 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserModel {
-
-    private String company;
-    private int count;
-
+public class CompanyModel {
+    String id;
+    int netProfit;
 }
