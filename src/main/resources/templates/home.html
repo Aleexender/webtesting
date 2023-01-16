@@ -5,9 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-<div>안녕하세요 회원가입을 위해 회원가입을 해주세요 </div>
-<button onclick="location.href=''">회원 가입</button >
-<button onclick="location.href=''">아이디 찾기</button >
-<button onclick="location.href=''">비밀번호 찾기</button >
+<div class="UserController">
+    <form action="/user/create" method="post">
+        <div class="form-group">
+            <label for="name">회사이름</label>
+            <input type="text" id="name" name="id" placeholder="">
+        </div>
+        <button type="submit">등록</button>
+    </form>
+    <form action="/user/plus" method="post">
+        <input type="text" name="id" placeholder="">
+    <button type="submit">+1</button>
+    </form>
+</div> <!-- /container -->
 </body>
 </html>
